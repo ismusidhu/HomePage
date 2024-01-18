@@ -1,0 +1,85 @@
+/* ==========================Font========================== */
+
+/* @font-face {
+  font-family: "robotoregular";
+  src: url(../fonts/roboto-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "robotoregular", sans-serif;
+}
+
+.content {
+  padding-top: 25px;
+  border-top: 3px solid var(--bg-hr);
+  height: calc(100vh - 110px);
+  background: var(--bg-primary);
+  background-image: url("right-image1.png");
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ .hexContainer {
+    width: 70%;
+    background-image: url("https://placehold.co/702x631");
+    background-size: cover;
+    /*
+    background-position: bottom center; */
+ }
+.hexLink {
+  background-color: var(--bg-hr);
+}
+
+nav {
+  width: 150px;
+  background: var(--bg-secondary);
+  transition: 0.5s;
+  overflow: hidden;
+  height: 100vh;
+}
+.toggle {
+  cursor: pointer;
+}
+header {
+  height: min-content;
+  /*
+          display: flex;
+           justify-content: space-around;
+           align-items: center;
+           height: 60px;
+           margin-left: 301px;
+  */
+  background: var(--bg-primary);
+}
+
+@media (max-width: 768px) {
+  nav, .nav {
+    display: none;
+  }
+  .content {
+    margin-left: unset;
+  }
+  /*
+    nav.active {
+        left: 0;
+        width: 100%;
+    }
+
+    nav ul li a.toggle {
+        display: none;
+    } */
+}
+
+:root {
+  --bg-primary: #015e5f;
+  --bg-secondary: #368979;
+  --bg-hr: #d4d4d4;
+  --bg-active: #fddb3a;
+  --cl-text: #f6f4e6;
+}
